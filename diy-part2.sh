@@ -12,3 +12,9 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.88.1/g' package/base-files/files/bin/config_generate
+
+#京东签到
+git clone --depth 1 https://github.com/jerrykuku/node-request.git package/new/node-request
+git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/new/luci-app-jd-dailybonus
+#网易云解锁
+git clone --depth 1 https://github.com/project-openwrt/luci-app-unblockneteasemusic.git package/new/luci-app-unblockneteasemusic
